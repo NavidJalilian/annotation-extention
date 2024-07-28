@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Annotation</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="flex">
+    <div class="w-1/4 p-4 bg-gray-100 h-screen overflow-y-auto">
+      <h2 class="text-lg font-bold mb-4">Hidden Quotes</h2>
+      <div id="hiddenQuotesContainer"></div>
+      <button id="showHiddenQuotesButton" class="px-4 py-2 bg-red-500 text-white rounded mt-4">
+        Show Hidden Quotes
+      </button>
+      <button id="clearStorageButton" class="px-4 py-2 bg-red-700 text-white rounded mt-4">
+        Clear Storage
+      </button>
+    </div>
+    <div
+      class="w-3/4 flex flex-col items-center justify-center h-screen bg-gray-100 overflow-y-auto"
+    >
+      <div
+        id="annotationsContainer"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6 max-w-screen-lg w-full"
+      ></div>
+      <div class="flex mt-4 space-x-4">
+        <button
+          id="nextButton"
+          class="px-4 py-2 bg-blue-500 text-white rounded"
+        >
+          Next
+        </button>
+        <button
+          id="toggleButton"
+          class="px-4 py-2 bg-green-500 text-white rounded"
+        >
+          Toggle View
+        </button>
+      </div>
+      <div class="mt-4">
+        <input
+          type="file"
+          id="fileUploader"
+          multiple
+          accept=".md"
+          class="mb-2"
+        />
+        <button
+          id="uploadButton"
+          class="px-4 py-2 bg-blue-500 text-white rounded"
+        >
+          Upload
+        </button>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

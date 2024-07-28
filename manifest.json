@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Random Annotation New Tab",
+  "version": "1.0",
+  "description": "Shows random annotations each time a new tab is opened.",
+  "permissions": ["storage"],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
